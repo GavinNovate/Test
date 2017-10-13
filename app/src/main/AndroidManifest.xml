@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.autoio.test">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".service.ProcessService01"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":ProcessService01" />
+
+        <service
+            android:name=".service.ProcessService02"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":ProcessService02" />
+        <service
+            android:name=".service.ProcessService03"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":ProcessService03" />
+        <service
+            android:name=".service.ProcessService04"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":ProcessService04" />
+        <service
+            android:name=".service.ProcessService05"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":ProcessService05" />
+        <service
+            android:name=".service.ProcessService06"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":ProcessService06" />
+        <service
+            android:name=".service.ProcessService07"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":ProcessService07" />
+        <service
+            android:name=".service.ProcessService08"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":ProcessService08" />
+        <service
+            android:name=".service.ProcessService09"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":ProcessService09" />
+        <service
+            android:name=".service.ProcessService10"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":ProcessService10" />
+        <service
+            android:name=".service.ProcessService11"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":ProcessService11" />
+        <service
+            android:name=".service.ProcessService12"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":ProcessService12" />
+        <service
+            android:name=".service.ProcessService13"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":ProcessService13" />
+        <service
+            android:name=".service.ProcessService14"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":ProcessService14" />
+        <service
+            android:name=".service.ProcessService15"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":ProcessService15" />
+        <service
+            android:name=".service.ProcessService16"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":ProcessService16" />
+        <service
+            android:name=".service.ProcessService17"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":ProcessService17" />
+        <service
+            android:name=".service.ProcessService18"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":ProcessService18" />
+        <service
+            android:name=".service.ProcessService19"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":ProcessService19" />
+        <service
+            android:name=".service.ProcessService20"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":ProcessService20" />
+        <service
+            android:name=".service.ProcessService21"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":ProcessService21" />
+        <service
+            android:name=".service.ProcessService22"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":ProcessService22" />
+        <service
+            android:name=".service.ProcessService23"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":ProcessService23" />
+        <service
+            android:name=".service.ProcessService24"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":ProcessService24" />
+        <service
+            android:name=".service.ProcessService25"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":ProcessService25" />
+        <service
+            android:name=".service.ProcessService26"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":ProcessService26" />
+        <service
+            android:name=".service.ProcessService27"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":ProcessService27" />
+        <service
+            android:name=".service.ProcessService28"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":ProcessService28" />
+        <service
+            android:name=".service.ProcessService29"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":ProcessService29" />
+        <service
+            android:name=".service.ProcessService30"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":ProcessService30" />
+        <service
+            android:name=".service.ProcessService31"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":ProcessService31" />
+        <service
+            android:name=".service.ProcessService32"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":ProcessService32" />
+
+        <receiver
+            android:name=".receiver.MemoryReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="MemoryReceiver" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

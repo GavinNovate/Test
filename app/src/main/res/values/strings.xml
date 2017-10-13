@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Test</string>
+    <string name="thread_test">CPU 测试</string>
+    <string name="thread">满载线程数:%1$d</string>
+    <string name="thread_add">增加</string>
+    <string name="thread_sub">减少</string>
+    <string name="thread_clear">清除</string>
+    <string name="memory_test">内存测试</string>
+    <string name="memory">内存使用量:%1$.2fM</string>
+    <string name="memory_add">增加</string>
+    <string name="memory_sub">减少</string>
+    <string name="memory_clear">清除</string>
+</resources>
