@@ -5,7 +5,10 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -73,6 +76,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button memorySubView;
     private Button memoryClearView;
 
+    private ImageView imageView1;
+    private ImageView imageView2;
+    private ImageView imageView3;
+    private ImageView imageView4;
+
     private List<Disposable> disposables = new ArrayList<>();
 
     private List<Subject<Boolean>> threadList = new ArrayList<>();
@@ -128,11 +136,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                     }
                 });
+
         threadView.setText(getString(R.string.thread, threadList.size()));
         memoryView.setText(getString(R.string.memory, 1.0 * (Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory()) / 1024 / 1024));
+
+        Glide.with(this).load(R.drawable.check).asGif().into(imageView1);
+        Glide.with(this).load(R.drawable.check).asGif().into(imageView2);
+        Glide.with(this).load(R.drawable.check).asGif().into(imageView3);
+        Glide.with(this).load(R.drawable.check).asGif().into(imageView4);
     }
 
     private void initView() {
+
         threadView = (TextView) findViewById(R.id.thread);
         threadAddView = (Button) findViewById(R.id.threadAdd);
         threadSubView = (Button) findViewById(R.id.threadSub);
@@ -142,6 +157,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         memoryAddView = (Button) findViewById(R.id.memoryAdd);
         memorySubView = (Button) findViewById(R.id.memorySub);
         memoryClearView = (Button) findViewById(R.id.memoryClear);
+
+        imageView1 = (ImageView) findViewById(R.id.imageView1);
+        imageView2 = (ImageView) findViewById(R.id.imageView2);
+        imageView3 = (ImageView) findViewById(R.id.imageView3);
+        imageView4 = (ImageView) findViewById(R.id.imageView4);
 
         threadAddView.setOnClickListener(this);
         threadSubView.setOnClickListener(this);
